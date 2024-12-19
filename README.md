@@ -1,5 +1,5 @@
 # project-template
-A template you can use when creating a new repository to immediately get started with your project! All that you need is to follow the quick setup below.
+A template you can use when creating a new repository to immediately get started with your project! This template uses webpack as the build tool. All that you need is to follow the quick setup below.
 
 ## For a quick setup:
 1. npm init -y
@@ -13,6 +13,49 @@ A template you can use when creating a new repository to immediately get started
 9. touch src/template.html
 10. touch src/styles.css
 11. *optional* npm install -D babel-loader @babel/core @babel/preset-env webpack
+
+## To add Tailwind Framework
+1. npm install -D tailwindcss postcss autoprefixer
+2. npx tailwindcss init
+3. touch postcss.config.js
+4. add this in your postcss.config.js
+
+module.exports = {
+    plugins: {
+        tailwindcss: {},
+        autoprefixer: {},
+    }
+}
+
+5. add the paths to all of your template files in tailwind.config.js
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{html,js}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+6. add the @tailwind directives to your main css file (styles.css)
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+7. npm install --save-dev postcss-loader
+
+8. add postcss-loader in your rules in webpack.config.js
+
+module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader", "postcss-loader"],
+      },
+    ]
+}
 
 ## To host, 
 1. npx webpack serve
