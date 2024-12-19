@@ -7,48 +7,83 @@
 </head>
 
 <body>
-    <div class="container">
-        <div clas="sidebar">
-            <div class="main-nav">
-                <nav class="dashboard">Dashboard</nav>
-                <nav class="home">Home</nav>
-                <nav class="profile">Profile</nav>
-                <nav class="messages">Messages</nav>
-                <nav class="history">History</nav>
-                <nav class="tasks">Tasks</nav>
-                <nav class="Communities">Communities</nav>
-            </div>
-            <div class="settings-nav">
-                <nav>Settings</nav>
-                <nav>Support</nav>
-                <nav></nav>
-            </div>
+    <div class="main-container min-h-screen w-full">
+        <div class="sidebar bg-indigo-400">
+                <div class="dashboard">
+                    <img class="w-16 h-auto mt-6 ml-6 mb-6" src="./images/view-dashboard.svg" alt="dashboard icon">
+                    <nav class="ml-2 text-2xl">Dashboard</nav>
+                </div>
+                <div class="sidebar-middle ml-10">
+                    <div class="home">
+                        <img class="w-8 h-auto mt-2 mb-2" src="./images/home.svg" alt="home icon">
+                        <nav class="ml-6">Home</nav>
+                    </div>
+                    <div class="profile">
+                        <img class="w-8 h-auto mt-2 mb-2" src="./images/account.svg" alt="profile icon">
+                        <nav class="ml-6">Profile</nav>
+                    </div>
+                    <div class="messages">
+                        <img class="w-8 h-auto mt-2 mb-2" src="./images/message.svg" alt="message icon">
+                        <nav class="ml-6">Messages</nav>
+                    </div>
+                    <div class="history">
+                        <img class="w-8 h-auto mt-2 mb-2" src="./images/history.svg" alt="history icon">
+                        <nav class="ml-6">History</nav>
+                    </div>
+                    <div class="tasks">
+                        <img class="w-8 h-auto mt-2 mb-2" src="./images/file-multiple.svg" alt="multiple tasks icon">
+                        <nav class="ml-6">Tasks</nav>
+                    </div>
+                    <div class="communities">
+                        <img class="w-8 h-auto mt-2 mb-2" src="./images/account-group.svg" alt="multiple accounts icon">
+                        <nav class="ml-6">Communities</nav>
+                    </div>
+                </div>
+                <div class="sidebar-bottom ml-10 mt-10">
+                    <div class="settings">
+                        <img class="w-8 h-auto mt-2 mb-2" src="./images/cog.svg" alt="settings icon">
+                        <nav class="ml-6">Settings</nav>
+                    </div>
+                    <div class="support">
+                        <img class="w-8 h-auto mt-2 mb-2" src="./images/face-agent.svg" alt="support icon">
+                        <nav class="ml-6">Support</nav>
+                    </div>
+                    <div class="privacy">
+                        <img class="w-8 h-auto mt-2 mb-2" src="./images/shield-check-outline.svg" alt="privacy icon">
+                        <nav class="ml-6">Privacy</nav>
+                    </div>
+                </div>
+            
         </div>
-        <div class="main-content">
+        <div class="main-content w-full">
             <div class="top-content">
                 <div class="search-and-profile">
                     <div class="search-side">
-                        <div>magnifying glass image</div>
+                        <img class="w-8 h-auto" src="./images/magnify.svg" alt="search icon">
                         <search>search</search>
                     </div>
                     <div class="profile-side">
-                        <div>notifications</div>
-                        <div>profile picture</div>
+                        <img class="w-8 h-auto" src="./images/bell-ring.svg" alt="notifications icon">
+                        <img class="w-8 h-auto" src="./images/cat.svg" alt="cat icon">
                         <div>profile name</div>
                     </div>
                 </div>
                 <div class="intro-and-buttons">
-                    <div>intro
-                        <div>profile picture</div>
-                        <p>Hi there</p>
-                        <p>Profile Name (@profilename)</p>
+                    <div class="intro">
+                        <img class="w-8 h-auto" src="./images/cat.svg" alt="cat icon">
+                        <div class="intro-hi">
+                            <p>Hi there</p>
+                            <p>Profile Name (@profilename)</p>
+                        </div>
                     </div>
-                    <button class="new-btn">new</button>
-                    <button class="upload-btn">upload</button>
-                    <button class="share-btn">share</button>
+                    <div>
+                        <button class="new-btn">new</button>
+                        <button class="upload-btn">upload</button>
+                        <button class="share-btn">share</button>
+                    </div>
                 </div>
             </div>
-            <div class="bot-content">
+            <div class="bot-content bg-gray-400">
                 <div class="projects">
                     <div>project 1</div>
                     <div>project 2</div>

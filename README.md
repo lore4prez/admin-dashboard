@@ -1,5 +1,5 @@
-# project-template
-A template you can use when creating a new repository to immediately get started with your project! This template uses webpack as the build tool. All that you need is to follow the quick setup below.
+# admin-dashboard
+This is a personal project created to help practice grid and flex in css and tailwindcss 
 
 ## For a quick setup:
 1. npm init -y

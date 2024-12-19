@@ -3,3 +3,87 @@
 @tailwind components;
 @tailwind utilities;
 
+
+body {
+    
+}
+
+.main-container { 
+    display: grid;
+    grid: 1fr / 1fr 4fr;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas:
+    "sidebar main-content";
+} 
+
+.sidebar {
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.sidebar-middle, .sidebar-bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard, .sidebar-middle > div, .sidebar-bottom > div {
+    display: flex;
+    font-weight: 700;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.main-content {
+    grid-area: main-content;
+    display: grid;
+    grid: 1fr 4fr / 1fr;
+    grid-template-areas: 
+    "top-content"
+    "bot-content";
+}
+
+.top-content {
+    grid-area: top-content;
+    display: grid;
+    grid: 1fr / 1fr;
+    grid-template-areas:
+    "search-and-profile"
+    "intro-and-buttons";
+}
+
+.search-and-profile {
+    grid-area: search-and-profile;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-side {
+    display: flex;
+}
+
+.profile-side {
+    display: flex;
+}
+
+.intro-and-buttons {
+    grid-area: intro-and-buttons;
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro {
+    display: flex;
+}
+
+.intro-hi {
+    display: flex;
+    flex-direction: column;
+}
+
+.bot-content {
+    grid-area: bot-content;
+}
+
